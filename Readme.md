@@ -1,6 +1,6 @@
 # ModernFade Javascript/CSS3 Crossfade
 
-A very limited library that will transition images or divs in a container with a css3 crossfade
+A very limited library that will transition images or divs in a container with a css3 crossfade. You should add the class **modern-fade** to your wrapper to get started with basic crossfading.
 
 ### to use on a div #wrapper w/ images inside (optional params shown)
 
