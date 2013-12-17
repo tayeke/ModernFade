@@ -25,7 +25,6 @@
     }
 
     ModernFade.prototype.transition = function() {
-      this.log('Start Transition');
       this.t_out = this.elements[this.index];
       this.next = this.index - 1 >= 0 ? this.index - 1 : this.elements.length - 1;
       this.t_in = this.elements[this.next];
@@ -36,7 +35,6 @@
     };
 
     ModernFade.prototype.afterTransition = function() {
-      this.log('End Transition');
       this.t_out.className = this.t_out.className.replace("out", "");
       this.index = this.next;
       return this.startTimeout();

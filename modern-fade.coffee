@@ -10,7 +10,7 @@ class @ModernFade
 		@startTimeout()
 
 	transition: =>
-		@log('Start Transition')
+		# @log('Start Transition')
 
 		@t_out = @elements[@index]
 		@next = if @index-1 >= 0 then @index-1 else @elements.length-1
@@ -23,7 +23,7 @@ class @ModernFade
 		setTimeout @afterTransition, @options.time
 
 	afterTransition: =>
-		@log('End Transition')
+		# @log('End Transition')
 
 		@t_out.className = @t_out.className.replace "out",""
 		@index = @next
